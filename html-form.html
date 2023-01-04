@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuska order</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 15px;
+        }
+        input{
+            padding: 3px;
+        }
+        input::placeholder{
+            text-align: center;
+        }
+        textarea{
+            resize: none;
+            border: 2px solid red ;
+            box-shadow: 5px 5px 5px red;
+            /* box-shadow: inset 5px 5px 5px red; */
+        }
+        input[type="reset"]{
+            width: 80px;
+            height: 35px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-left: 20px;
+            background-color: brown;
+            border: none;
+            box-shadow: 5px 5px 5px brown;
+        }
+        input[type="submit"]{
+            width: 80px;
+            height: 35px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-left: 20px;
+            background-color: green;
+            border: none;
+            box-shadow: 5px 5px 5px green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>This form is for fuska order</h3>
+    </header>
+    <main>
+        <form>
+            <label for="Name">Your name
+                <input type="text" name="name" id="Name" placeholder="Enter your name">
+            </label>
+            <label for="Email">Your Email
+                <input type="text" name="email" id="Email" placeholder="Enter your Email">
+            </label>
+            <label for="Phone">Your Phone
+                <input type="text" name="phone" id="Phone" placeholder="Enter your Mobile">
+            </label>
+            <fieldset>
+                <legend>Fuska Type</legend>
+                <label for="Normal">
+                    <input type="radio" name="type" id="Normal">Normal Fuska
+                </label>
+                <label for="Spicy">
+                    <input type="radio" name="type" id="Spicy">Spicy Fuska
+                </label>
+                <label for="Doi">
+                    <input type="radio" name="type" id="Doi">Doi Fuska
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Fuska Material Details</legend>
+                <label for="Normal">
+                    <input type="checkbox" name="material" id="Egg">Extra Egg
+                </label>
+                <label for="Tog">
+                    <input type="checkbox" name="material" id="Tog">Extra Tog
+                </label>
+                <label for="Lemon">
+                    <input type="checkbox" name="material" id="Lemon">Extra Lemon
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Instruction or command or Suggestions</legend>
+                    <textarea name="instruction" id="Instruction" cols="30" rows="3"></textarea>
+            </fieldset>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
