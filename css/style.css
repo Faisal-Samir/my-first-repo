@@ -1,6 +1,19 @@
-header ul{
+header > ul{
     display: flex;
     margin-left: 100px;
+}
+header li .hovernavi{
+    display: none;
+}
+header li:hover > .hovernavi{
+    display: block;
+    padding-left: 0;
+    position: absolute;
+    background-color: aquamarine;
+    margin: 5px 0 0 -20px;
+}
+header li:hover .hovernavi li:hover{
+    background-color: lightgreen;
 }
 header ul li{
     list-style: none;
@@ -8,7 +21,6 @@ header ul li{
 }
 header ul li:hover{
     background-color: aqua;
-    
 }
 header ul li a{
     text-decoration: none;
